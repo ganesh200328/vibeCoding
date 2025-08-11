@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --card-bg: #fff;
+    --border-color: #dee2e6;
+}
+
+[data-bs-theme="dark"] {
+    --primary-color: #0d6efd;
+    --secondary-color: #adb5bd;
+    --background-color: #212529;
+    --text-color: #f8f9fa;
+    --card-bg: #343a40;
+    --border-color: #495057;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-switch {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.stat-card {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid var(--border-color);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.stat-card h5 {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.stat-card .display-4 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.chart-container {
+    position: relative;
+    height: 40vh;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    background-color: var(--card-bg);
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.toast {
+    border-radius: 10px;
+}
+
+.progress-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.water-tracker {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.water-tracker p {
+    margin-bottom: 15px;
+}
